@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 
 import '../../../core/helper/enums/enums.dart';
 import '../../../core/network/api_constants.dart';
-import '../../../core/services/dio/implementations/repos/uploader_storage_repo.dart';
+import '../../../core/services/remote_database/implementations/repos/uploader_storage_repo.dart';
 import '../../../core/utils/app_ui_utils.dart';
 import '../../employee/data/model/employee_model.dart';
 

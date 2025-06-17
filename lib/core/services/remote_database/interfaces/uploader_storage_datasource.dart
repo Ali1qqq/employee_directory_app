@@ -1,4 +1,4 @@
-import 'package:employeedirectoryapp/core/services/dio/interfaces/remote_local_datasource_base.dart';
+import 'package:employeedirectoryapp/core/services/remote_local_database/interfaces/remote_local_datasource_base.dart';
 
 import 'i_remote_storage_service.dart';
 

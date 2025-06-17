@@ -1,4 +1,4 @@
-import '../../../../core/services/dio/interfaces/remote_datasource_base.dart';
+import '../../../../core/services/remote_database/interfaces/remote_datasource_base.dart';
 import '../model/employee_model.dart';
 
 class EmployeeDatasource extends RemoteDatasourceBase<EmployeeModel> {

@@ -6,7 +6,7 @@ import 'package:image_picker/image_picker.dart';
 import '../../../../core/network/error/failure.dart';
 import '../../../core/helper/extensions/getx_controller_extensions.dart';
 import '../../../core/network/api_constants.dart';
-import '../../../core/services/dio/implementations/repos/uploader_storage_repo.dart';
+import '../../../core/services/remote_database/implementations/repos/uploader_storage_repo.dart';
 import '../../../core/utils/app_ui_utils.dart';
 import '../data/model/employee_model.dart';
 import 'all_employee_controller.dart'; // implements UploaderStorageDataSource<EmployeeModel>

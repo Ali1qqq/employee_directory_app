@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
-import 'package:employeedirectoryapp/core/services/dio/implementations/repos/remote_local_datasource_repo.dart';
+import 'package:employeedirectoryapp/core/services/remote_local_database/implementations/repos/remote_local_datasource_repo.dart';
 
 import '../../../../network/error/error_handler.dart';
 import '../../../../network/error/failure.dart';

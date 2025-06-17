@@ -23,7 +23,7 @@ class LocalDatasourceRepository<T> {
         return Right(localData);
       // }
 
-      // Fetch from remote if local is empty
+      // Fetch from remote_database if local is empty
       // final remoteData = await remoteDatasource.fetchAll();
 
       // await localDatasource.saveAllData(remoteData);
@@ -46,7 +46,7 @@ class LocalDatasourceRepository<T> {
         return Right(localData);
       // }
 
-      // Fetch from remote if not found locally
+      // Fetch from remote_database if not found locally
       // final remoteData = await remoteDatasource.fetchById(id);
 
       // if (remoteData != null) {

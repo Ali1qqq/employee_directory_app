@@ -2,7 +2,6 @@ import 'package:employeedirectoryapp/features/splash/controller/splash_controlle
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
 
-import '../../../core/helper/extensions/getx_controller_extensions.dart' as Get;
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

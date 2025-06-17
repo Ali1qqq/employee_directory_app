@@ -6,16 +6,15 @@ import 'package:hive/hive.dart';
 import '../../features/employee/controllers/add_employee_controller.dart';
 import '../../features/employee/controllers/all_employee_controller.dart';
 import '../../features/employee/data/datasources/employee_uploader_data_source.dart';
-import '../../features/splash/controller/splash_controller.dart';
 import '../helper/extensions/getx_controller_extensions.dart';
 import '../network/api_constants.dart';
 
-import '../services/dio/implementations/repos/uploader_storage_repo.dart';
-import '../services/dio/implementations/services/cloudinary_storage_service.dart';
-import '../services/dio/implementations/services/dio_service.dart';
-import '../services/dio/interfaces/i_remote_database_service.dart';
 import '../services/local_database/implementations/services/hive_database_service.dart';
 import '../services/local_database/interfaces/i_local_database_service.dart';
+import '../services/remote_database/implementations/repos/uploader_storage_repo.dart';
+import '../services/remote_database/implementations/services/cloudinary_storage_service.dart';
+import '../services/remote_database/implementations/services/dio_service.dart';
+import '../services/remote_database/interfaces/i_remote_database_service.dart';
 
 class AppBindings extends Bindings {
   @override

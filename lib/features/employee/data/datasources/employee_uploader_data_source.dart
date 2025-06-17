@@ -1,7 +1,7 @@
 
 import 'package:employeedirectoryapp/features/employee/data/model/employee_model.dart';
 import '../../../../core/network/as.dart';
-import '../../../../core/services/dio/interfaces/uploader_storage_datasource.dart';
+import '../../../../core/services/remote_database/interfaces/uploader_storage_datasource.dart';
 
 class EmployeeUploaderDataSource extends UploaderStorageDataSource<EmployeeModel> {
   EmployeeUploaderDataSource({
