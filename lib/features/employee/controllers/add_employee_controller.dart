@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,6 +20,8 @@ class AddEmployeeController extends GetxController {
 
   File? pickedImage;
   bool isUploading = false;
+
+
 
   final RemoteDataServiceWithUploaderRepo<EmployeeModel> uploaderRepo;
 
@@ -85,7 +88,7 @@ class AddEmployeeController extends GetxController {
         AppUIUtils.onFailure(failure.message);
       },
       (EmployeeModel employee) {
-        _onSaveSuccess(employee);
+        _onSaveSuccess(newEmployee);
       },
     );
 
@@ -93,6 +96,7 @@ class AddEmployeeController extends GetxController {
   }
 
   void _onSaveSuccess(EmployeeModel employee) {
+    log("employee: ${employee.toJson()}");
     read<AllEmployeeController>().addToListEmployee(employee);
 
     AppUIUtils.onSuccess('Employee saved successfully');

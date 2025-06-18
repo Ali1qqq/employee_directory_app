@@ -17,15 +17,23 @@ class AddEmployeeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title:  Text('Add Employee',style: AppTextStyles.headLineStyle1,),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+          },
+        ),
         centerTitle: true,
         backgroundColor: Colors.teal,
       ),
-      body: GetBuilder<AddEmployeeController>(builder: (controller) {
+      body: GetBuilder<AddEmployeeController>(
+          // dispose: (state) => state.dispose(),
+          builder: (controller) {
+
         return Padding(
           padding: const EdgeInsets.all(16.0),
           child: Form(
             key: controller.formKey,
-            child: ListView(
+            child: Column(
               children: [
                 Center(
                   child: GestureDetector(
@@ -34,7 +42,7 @@ class AddEmployeeScreen extends StatelessWidget {
                       radius: 50,
                       backgroundImage: controller.pickedImage != null
                           ? FileImage(controller.pickedImage!)
-                          :  AssetImage(AppAssets.defaultAvatar) as ImageProvider,
+                          : const AssetImage(AppAssets.defaultAvatar),
                     ),
                   ),
                 ),

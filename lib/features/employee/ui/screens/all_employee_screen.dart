@@ -15,7 +15,7 @@ class AllEmployeeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Employee Directory')),
+      appBar: AppBar(title: Text('Employee Directory', style: AppTextStyles.headLineStyle1,), centerTitle: true, backgroundColor: Colors.teal,),
       body: GetBuilder<AllEmployeeController>(
         builder: (allEmployeeController) {
           if (allEmployeeController.fetchEmployeeState.isLoading) {

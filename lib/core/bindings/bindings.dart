@@ -62,13 +62,15 @@ class AppBindings extends Bindings {
   }
 
   // Permanent Controllers Initialization
-  void _initializePermanentControllers(_Repositories repositories) {}
+  void _initializePermanentControllers(_Repositories repositories) {
+    put(AddEmployeeController(repositories.uploaderRemoteDataService),permanent: true);
+
+  }
 
   // Lazy Controllers Initialization
   void _initializeLazyControllers(_Repositories repositories) {
 
     lazyPut(AllEmployeeController(repositories.uploaderRemoteDataService));
-    lazyPut(AddEmployeeController(repositories.uploaderRemoteDataService));
   }
 }
 
